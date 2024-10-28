@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "async-network-live"
+version = "0.1.0"
+description = "The project collects key parameters from base stations across all technologies (GSM, UMTS, LTE, NR) from various sources. For our own radio network, data is gathered directly from OSS, while for stations provided by partners, it is taken from configuration files. The configuration files are presented in CSV and XML formats."
+authors = ["Ramil Albakov <ramil.albakov2@gmail.com>"]
+readme = "README.md"
+packages = [{include = "async_network_live"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "24.8.0"
+flake8 = "^7.1.1"
+flake8-print = "^5.0.0"
+flake8-docstrings = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
